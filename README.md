@@ -3,7 +3,7 @@ Based on the paper ["Unaligned Supervision for Automatic Music Transcription in 
 
 We provide here our improved labels for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). 
 
-The labels are in the form of MIDI files, currently pitch-only. Pitch-with-instrument will follow. In the meantime, we provide predictions of pitch-with-instrument on the MusicNet test set. The labels/predictions were generated automatically by the EM process described in our paper ["Unalgined Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org). 
+The labels are in the form of MIDI files, currently pitch-only. Pitch-with-instrument will follow. In the meantime, we provide predictions of pitch-with-instrument on the MusicNet test set. The labels/predictions were generated automatically by the EM process described in our paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org). 
 
 You can train from scratch the architecture from the [MAESTRO paper](https://arxiv.org/abs/1810.12247) on MusicNet recordings with our labels and reach (without pitch-shift augmentation): 
 
