@@ -13,4 +13,4 @@ MAESTRO test set: N note-level F1 and M frame-level F1
 
 Guitar-Set (entire dataset used as test): N note-level F1 and M frame-level F1. 
 
-To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org) is required.
+To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org), is required.
