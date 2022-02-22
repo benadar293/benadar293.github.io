@@ -14,15 +14,15 @@ We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch 
 | test set | note F1 | note-with-inst. F1 | frame F1 | note-with-offset F1 |
 | --- | :-: | :-: | :-: | :-: |
 | **MAPS** | 82.0| 82.0 |69.1 | 37.7 |
-| **MAESTRO** |||||
+| **MAESTRO** | 85.0 | 85.0 |65.2 | 31.9 |
 | **GuitarSet** | 72.8 | - | 68.4 | 30.7 |
 | **MusicNetEM** | 91.4 | 88.1 | 82.5 | 71.4 |
 | **MusicNetEM wind** | 88.5 | 79.9 | 83.1 | 65.0 |
 | **MusicNetEM strings** | 89.1 | 85.5 | 82.6 | 77.7 |
 | **MusicNetEM strings** * | 85.9 | 81.1 | 79.0 | 75.1 |
 
-| test instrument | note-with-instrument F1 |
-| --- | --- |
+| test instrument | note-with-inst. F1 |
+| --- | :-: |
 | **Violin** | 87.3 |
 | **Viola** | 61.1 |
 | **Cello** | 79.9 |
