@@ -16,7 +16,8 @@ Guitar-Set (entire dataset used as test): N note-level F1 and M frame-level F1.
 MusicNetEM: 91.4 note-level F1, 88.1 note-with-instrument F1, and 82.5 frame-level F1 
 
 | test set | note F1 | note-with-instrument F1 | frame F1 | note-with-offset F1 |
-| -:- | -:- | -:- | -:- | -:- |
+<!-- | -:- | -:- | -:- | -:- | -:- | -->
+| --- | --- | --- | --- | --- | 
 | **MAPS** |||||
 | **MAESTRO** |||||
 | **GuitarSet** |||||
