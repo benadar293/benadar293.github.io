@@ -8,13 +8,6 @@ The labels are in the form of MIDI files, and include instrument information. Th
 You can train from scratch the architecture from the [MAESTRO paper](https://arxiv.org/abs/1810.12247) on MusicNet recordings with our labels. For note-with-instrument transcription, use N_KEYS * (N_INSTRUMENTS + 1) classes, one for each note/instrument combination, and additional N_KEYS for pitch indepenedent of intstrument. 
 We used 88 * 12 = 1056 classes. Doing so, we've reached (without any augmentation, not even pitch shift): 
 
-MAPS test set: N note-level F1 and M frame-level F1 
-
-MAESTRO test set: N note-level F1 and M frame-level F1 
-
-Guitar-Set (entire dataset used as test): N note-level F1 and M frame-level F1. 
-
-MusicNetEM: 91.4 note-level F1, 88.1 note-with-instrument F1, and 82.5 frame-level F1 
 
 | test set | note F1 | note-with-inst. F1 | frame F1 | note-with-offset F1 |
 | --- | :-: | :-: | :-: | :-: |
