@@ -3,9 +3,9 @@ Based on the paper ["Unaligned Supervision for Automatic Music Transcription in 
 
 We provide here our improved labels for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). 
 
-The labels are in the form of MIDI files, currently pitch-only. Pitch-with-instrument will follow. In the meantime, we provide predictions of pitch-with-instrument on the MusicNet test set. The labels/predictions were generated automatically by the EM process described in our paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org). 
+The labels are in the form of MIDI files, and include instrument information. The labels were generated automatically by an EM process similar to the one described in our paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org). We improved the alignment algorithm, and in order to get more accurate labels, we divided the datast into three groups, based on the ensembles: piano solo, strings, and wind. We performed the EM process on each group separately.
 
-You can train from scratch the architecture from the [MAESTRO paper](https://arxiv.org/abs/1810.12247) on MusicNet recordings with our labels and reach (without pitch-shift augmentation): 
+You can train from scratch the architecture from the [MAESTRO paper](https://arxiv.org/abs/1810.12247) on MusicNet recordings with our labels. Doing so, we've reached (without any augmentation, not even pitch shift): 
 
 MAPS test set: N note-level F1 and M frame-level F1 
 
@@ -18,7 +18,7 @@ MusicNetEM: 91.4 note-level F1, 88.1 note-with-instrument F1, and 82.5 frame-lev
 | test set | note F1 | note-with-inst. F1 | frame F1 | note-with-offset F1 |
 | --- | :-: | :-: | :-: | :-: |
 | **MAPS** |||||
-| **MAESTRO** |||||
+| **MAESTRO** ||| 69.1 | 37.7 |
 | **GuitarSet** | 72.8 | - | 68.4 | 30.7 |
 | **MusicNetEM** | 91.4 | 88.1 | 82.5 | 71.4 |
 | **MusicNetEM wind** | 88.5 | 79.9 | 83.1 | 65.0 |
