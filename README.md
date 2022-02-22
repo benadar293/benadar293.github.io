@@ -6,7 +6,7 @@ We provide here our improved labels for the [MusicNet dataset](https://arxiv.org
 The labels are in the form of MIDI files, and include instrument information. The labels were generated automatically by an EM process similar to the one described in our paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org). We improved the alignment algorithm, and in order to get more accurate labels, we divided the datast into three groups, based on the ensembles: piano solo, strings, and wind. We performed the EM process on each group separately.
 
 You can train from scratch the architecture from the [MAESTRO paper](https://arxiv.org/abs/1810.12247) on MusicNet recordings with our labels. For note-with-instrument transcription, use N_KEYS * (N_INSTRUMENTS + 1) onset classes, one for each note/instrument combination, and additional N_KEYS for pitch indepenedent of instrument. 
-We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch size 8, we've reached (without any augmentation): 
+We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch size 8, without any augmentation, we've reached: 
 
 
 | test set | note F1 | note-with-inst. F1 | frame F1 | note-with-offset F1 |
