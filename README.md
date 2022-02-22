@@ -17,6 +17,9 @@ MusicNetEM: 91.4 note-level F1, 88.1 note-with-instrument F1, and 82.5 frame-lev
 
 | test set | note F1 | note-with-instrument F1 | frame F1 | note-with-offset F1 |
 | --- | --- | --- | --- | --- |
+| **MAPS** |||||
+| **MAESTRO** |||||
+| **GuitarSet** |||||
 | **MusicNetEM** | 91.4 | 88.1 | 82.5 | 71.4 |
 | **MusicNetEM wind** | 88.5 | 79.9 | 83.1 | 65.0 |
 | **MusicNetEM strings** | 89.1 | 85.5 | 82.6 | 77.7 |
