@@ -31,4 +31,4 @@ We used 88 * 12 = 1056 classes. Doing so, we've reached (without any augmentatio
 | MusicNetEM test | Show file differences that **haven't been** staged |
 
 
-To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org), is required.
+To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org), including synthetic data pre-training and pitch shift augmentation, is required.
