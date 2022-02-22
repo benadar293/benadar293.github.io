@@ -26,9 +26,9 @@ We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch 
 | **Violin** | 87.3 |
 | **Viola** | 61.1 |
 | **Cello** | 79.9 |
-|**Bassoon** ||
-|**Clarinet** ||
-| **Horn** ||
+|**Bassoon** | 78.0 |
+|**Clarinet** | 86.8 |
+| **Horn** | 75.0 |
 
 | `git status` | List all *new or modified* files |
 
