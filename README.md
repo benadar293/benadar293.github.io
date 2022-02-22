@@ -22,6 +22,11 @@ MusicNetEM: 91.4 note-level F1, 88.1 note-with-instrument F1, and 82.5 frame-lev
 | **MusicNetEM strings** | 89.1 | 85.5 | 82.6 | 77.7 |
 | **MusicNetEM strings** * | 85.9 | 81.1 | 79.0 | 75.1 |
 
+| test instrument | note-with-instrument F1 |
+| --- | --- |
+| **Violin** | 87.3 |
+| **Viola** | 61.1 |
+| **Cello** | 79.9 |
 
 | `git status` | List all *new or modified* files |
 
