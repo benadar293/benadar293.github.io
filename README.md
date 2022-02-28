@@ -3,8 +3,8 @@ Based on the paper ["Unaligned Supervision for Automatic Music Transcription in 
 
 We provide here our improved labels for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). 
 
-| test set | MAESTRO | | MAPS | | GuitarSet ||
-| --- | :-: | :-: | :-: | :-: |
+| test set | MAESTRO | | MAPS | | GuitarSet | |
+| --- | :-: | :-: | :-: | :-: | :-: |
 | test set | note F1 | frame F1 | note F1 | frame F1 |
 | **Supervised** |||||
 | **Hawthorne et al., 2019** | 82.0 | 82.0 |69.1 | 37.7 |
