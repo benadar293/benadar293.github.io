@@ -5,9 +5,9 @@ We provide here our improved labels for the [MusicNet dataset](https://arxiv.org
 
 | test set | note F1 | note-with-inst. F1 | frame F1 | note-with-offset F1 |
 | --- | :-: | :-: | :-: | :-: |
-| Supervised | :-: | :-: | :-: | :-: |
+| Supervised | :-: | :-: | :-: |
 
-| **Hawthorne et al., 2019** | 82.0| 82.0 |69.1 | 37.7 |
+| **Hawthorne et al., 2019** | 82.0 | 82.0 |69.1 | 37.7 |
 | **Kong et al., 2021** | 85.0 | 85.0 |65.2 | 31.9 |
 | **Gardner et al., 2021** | 72.8 | - | 68.4 | 30.7 |
 | **MusicNetEM** | 91.4 | 88.1 | 82.5 | 71.4 |
