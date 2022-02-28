@@ -3,10 +3,8 @@ Based on the paper ["Unaligned Supervision for Automatic Music Transcription in 
 
 We provide here our improved labels for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). 
 
-<!-- | test set | MAESTRO | | MAPS | | GuitarSet | | -->
 | test set | note F1 | frame F1 | note F1 | frame F1 |
 | --- | :-: | :-: | :-: | :-: | :-: |
-<!-- | test set | note F1 | frame F1 | note F1 | frame F1 |
 | **Supervised** |||||
 | **Hawthorne et al., 2019** | 82.0 | 82.0 |69.1 | 37.7 |
 | **Kong et al., 2021** | 85.0 | 85.0 |65.2 | 31.9 |
@@ -16,7 +14,7 @@ We provide here our improved labels for the [MusicNet dataset](https://arxiv.org
 | **Synth** | 88.5 | 79.9 | 83.1 | 65.0 |
 | **MusicNet** | 89.1 | 85.5 | 82.6 | 77.7 |
 | **MusicNetEM (ours)** * | 85.9 | 81.1 | 79.0 | 75.1 |
-| **Self Collected (ours)** * | 85.9 | 81.1 | 79.0 | 75.1 | -->
+| **Self Collected (ours)** * | 85.9 | 81.1 | 79.0 | 75.1 |
 
 The labels are in the form of MIDI files aligned with the audio, and include instrument information. Onset timing accuracy of the labels is 32ms, which is sufficient to train a transcriber. Onset timings in the original MusicNet labels are not accurate enough for this.
 
