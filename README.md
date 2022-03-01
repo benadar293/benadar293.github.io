@@ -1,6 +1,8 @@
 # benadar293.github.io
 
-| MAESTRO || MAPS || GuitarSet || MusicNetEM |
+|| MAESTRO || MAPS || GuitarSet || MusicNetEM ||
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+
 <!-- | | Note F1 | Frame F1 | Note F1 | Frame F1 | Note F1 | Frame F1 | Note F1 | Frame F1 |
 |Supervised |||||||||
 |DBLP:conf/iclr/HawthorneSRSHDE19 | 95.3 | 90.2 | 86.4 | 84.9 | - | - | - | - |
