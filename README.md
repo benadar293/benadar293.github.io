@@ -5,7 +5,7 @@
 | | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** |
 |**Supervised** |||||||||
 |[Hawthorne et al., 2019](https://arxiv.org/abs/1810.12247) | 95.3 | 90.2 | 86.4 | 84.9 | - | - | - | - |
-|[Gardner et al., 2021](https://arxiv.org/abs/2111.03017)| 96.0 | 88.0 | - | - | - | - | - | - |
+|[Gardner et al., 2021](https://arxiv.org/abs/2111.03017)| 96.0 | 88.0 | - | - | 90.0 | 89.0 | - | - |
 | **Weakly/self-supervised/ZS** |||||||||
 |[Gardner et al., 2021](https://arxiv.org/abs/2111.03017) ZS | 28.0 | 60.0 | - | - | 32.0 | 58.0 | - | - |
 |[Cheuk et al., 2021](https://arxiv.org/abs/2107.04954) | - | - | 75.2 | 79.5 | - | - | - | - |
