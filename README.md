@@ -10,7 +10,7 @@
 |[Gardner et al., 2021](https://arxiv.org/abs/2111.03017) ZS | 28.0 | 60.0 | - | - | 32.0 | 58.0 | - | - |
 |[Cheuk et al., 2021](https://arxiv.org/abs/2107.04954) | - | - | 75.2 | 79.5 | - | - | - | - |
 |Synth | 83.8 | 74.7 | 79.1 | 76.6 | 68.4 | 72.9 | 72.0 | 59.8 |
-|[MusicNet] | 57.5 | 57.9 | 53.4 | 74.3 | 10.0 | 57.2 | 41.5 | 66.7 |
+|[MusicNet](https://arxiv.org/abs/1611.09827) | 57.5 | 57.9 | 53.4 | 74.3 | 10.0 | 57.2 | 41.5 | 66.7 |
 |[MusicNetEM](https://link-url-here.org) (ours) | 89.7 | 76.0 | 87.3 | 79.6 | 82.9 | 81.6 | 88.8 | 82.8 |
 | [MusicNetEM](https://link-url-here.org) (ours) | 89.7 | 76.0 | 87.3 | 79.6 | - | - | 83.7 | 73.1 |
 | [MusicNetEM1L](https://link-url-here.org) (ours) | 89.7 | 77.0 | 86.8 | 81.4 | - | - | - | - |
