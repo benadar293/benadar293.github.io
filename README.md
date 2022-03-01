@@ -2,9 +2,8 @@
 
 || MAESTRO || MAPS || GuitarSet || MusicNetEM ||
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-
-<!-- | | Note F1 | Frame F1 | Note F1 | Frame F1 | Note F1 | Frame F1 | Note F1 | Frame F1 |
-|Supervised |||||||||
+| | Note F1 | Frame F1 | Note F1 | Frame F1 | Note F1 | Frame F1 | Note F1 | Frame F1 |
+<!-- |Supervised |||||||||
 |DBLP:conf/iclr/HawthorneSRSHDE19 | 95.3 | 90.2 | 86.4 | 84.9 | - | - | - | - |
 | DBLP:journals/taslp/KongLSWW21 | 96.7 | 89.6 | - | - | - | - | - | - |
 |DBLP:journals/corr/abs-2111-03017 | 96.0 | 88.0 | - | - | - | - | - | - |
