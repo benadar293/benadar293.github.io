@@ -1,4 +1,30 @@
 # benadar293.github.io
+
+| \multicolumn{2}{|c|}{MAESTRO} | \multicolumn{2}{|c|}{MAPS} | \multicolumn{2}{|c|}{GuitarSet} | \multicolumn{2}{|c|}{MusicNet$_{EM}$} |
+|\hline
+| | \multicolumn{1}{|c|}{Note F1} | \multicolumn{1}{|c|}{Frame F1} | \multicolumn{1}{|c|}{Note F1} | \multicolumn{1}{|c|}{Frame F1} | \multicolumn{1}{|c|}{Note F1} | \multicolumn{1}{|c|}{Frame F1} | \multicolumn{1}{|c|}{Note F1} | \multicolumn{1}{|c|}{Frame F1} |
+|\hline
+|\textbf{Supervised} | \multicolumn{8}{|c|}{}|
+|\hline
+|~\cite{DBLP:conf/iclr/HawthorneSRSHDE19} | 95.3 | \textbf{90.2} | \textbf{86.4} | \textbf{84.9} | - | - | - | - |
+|% ~\cite{DBLP:journals/taslp/KongLSWW21} | \textbf{96.7} | 89.6 | - | - | - | - | - | - |
+|~\cite{DBLP:journals/corr/abs-2111-03017} | 96.0 | 88.0 | - | - | - | - | - | - |
+|\hline
+|\textbf{Weakly/self-supervised/ZS} |\multicolumn{8}{|c|}{} |
+|\hline~\cite{DBLP:journals/corr/abs-2111-03017} ZS | 28.0 | 60.0 | - | - | 32.0 | 58.0 | - | - |
+|\hline
+|% \hline
+|~\cite{DBLP:conf/mm/CheukHS21} | - | - | 75.2 | 79.5 | - | - | - | - |
+|\hline
+|Synth | 83.8 | 74.7 | 79.1 | 76.6 | 68.4 | 72.9 | 72.0 | 59.8 |
+|\hline
+|MusicNet | 57.5 | 57.9 | 53.4 | 74.3 | 10.0 | 57.2 | 41.5 | 66.7 |
+|\hline
+|MusicNet$_{EM}$ (ours) | \textbf{89.7} | 76.0 | \textbf{87.3} | 79.6 | \textbf{82.9} | \textbf{81.6} | \textbf{88.8} | \textbf{82.8} |
+|% MusicNet$_{EM}$ (ours) | \textbf{89.7} | 76.0 | \textbf{87.3} | 79.6 | - | - | 83.7 | 73.1 |
+|% MusicNet$_{EM}$1L (ours) | \textbf{89.7} | \textbf{77.0} | 86.8 | \textbf{81.4} |
+|Self-collected (ours) | 89.6 | \textbf{76.8} | 86.6 | \textbf{80.9} | 82.2 | 79.3 | - | - |
+
 Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org).
 ![alt text](https://github.com/benadar293/benadar293.github.io/blob/main/teaser.PNG?raw=true)
 
