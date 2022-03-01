@@ -5,7 +5,7 @@ We provide here our improved labels for the [MusicNet dataset](https://arxiv.org
 
 ![alt text](https://github.com/benadar293
 /
-benadar293.github.io/blob/[branch]/image.jpg?raw=true)
+benadar293.github.io/blob/main/image.jpg?raw=true)
 
 | test set | MAESTRO || MAPS || GuitarSet ||
 | --- | :-: | :-: | :-: | :-: | :-: | :-: |
