@@ -5,7 +5,6 @@
 | | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** |
 |**Supervised** |||||||||
 |Hawthorne et al., 19 | 95.3 | 90.2 | 86.4 | 84.9 | - | - | - | - |
-<!-- | DBLP:journals/taslp/KongLSWW21 | 96.7 | 89.6 | - | - | - | - | - | - | -->
 |Gardenr et al., 2021| 96.0 | 88.0 | - | - | - | - | - | - |
 | **Weakly/self-supervised/ZS** |||||||||
 |Gardenr et al., 2021 ZS | 28.0 | 60.0 | - | - | 32.0 | 58.0 | - | - |
