@@ -1,5 +1,8 @@
 # benadar293.github.io
 
+Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org).
+![alt text](https://github.com/benadar293/benadar293.github.io/blob/main/teaser.PNG?raw=true)
+
 || **MAESTRO** || **MAPS** || **GuitarSet** || **MusicNetEM** ||
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** |
@@ -13,9 +16,6 @@
 |[MusicNet](https://arxiv.org/abs/1611.09827) | 57.5 | 57.9 | 53.4 | 74.3 | 10.0 | 57.2 | 41.5 | 66.7 |
 |[MusicNetEM](https://link-url-here.org) (ours) | **89.7** | 76.0 | **87.3** | 79.6 | **82.9** | **81.6** | **88.8** | **82.8** |
 |[Self-collected](https://link-url-here.org) (ours) | 89.6 | **76.8** | 86.6 | **80.9** | 82.2 | 79.3 | - | - |
-
-Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org).
-![alt text](https://github.com/benadar293/benadar293.github.io/blob/main/teaser.PNG?raw=true)
 
 We provide here our improved labels for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). 
 
