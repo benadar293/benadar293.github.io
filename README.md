@@ -3,7 +3,7 @@
 || MAESTRO || MAPS || GuitarSet || MusicNetEM ||
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | | Note F1 | Frame F1 | Note F1 | Frame F1 | Note F1 | Frame F1 | Note F1 | Frame F1 |
-<!-- |Supervised |||||||||
+|Supervised |||||||||
 |DBLP:conf/iclr/HawthorneSRSHDE19 | 95.3 | 90.2 | 86.4 | 84.9 | - | - | - | - |
 | DBLP:journals/taslp/KongLSWW21 | 96.7 | 89.6 | - | - | - | - | - | - |
 |DBLP:journals/corr/abs-2111-03017 | 96.0 | 88.0 | - | - | - | - | - | - |
@@ -15,7 +15,7 @@
 |MusicNetEM (ours) | 89.7 | 76.0 | 87.3 | 79.6 | 82.9 | 81.6 | 88.8 | 82.8 |
 | MusicNetEM (ours) | 89.7 | 76.0 | 87.3 | 79.6 | - | - | 83.7 | 73.1 |
 | MusicNetEM1L (ours) | 89.7 | 77.0 | 86.8 | 81.4 | - | - | - | - |
-|Self-collected (ours) | 89.6 | 76.8 | 86.6 | 80.9 | 82.2 | 79.3 | - | - | -->
+|Self-collected (ours) | 89.6 | 76.8 | 86.6 | 80.9 | 82.2 | 79.3 | - | - |
 
 Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org).
 ![alt text](https://github.com/benadar293/benadar293.github.io/blob/main/teaser.PNG?raw=true)
