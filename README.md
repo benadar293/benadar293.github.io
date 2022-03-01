@@ -3,13 +3,13 @@
 || **MAESTRO** || **MAPS** || **GuitarSet** || **MusicNetEM** ||
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** |
-|Supervised |||||||||
-|DBLP:conf/iclr/HawthorneSRSHDE19 | 95.3 | 90.2 | 86.4 | 84.9 | - | - | - | - |
-| DBLP:journals/taslp/KongLSWW21 | 96.7 | 89.6 | - | - | - | - | - | - |
-|DBLP:journals/corr/abs-2111-03017 | 96.0 | 88.0 | - | - | - | - | - | - |
-|Weakly/self-supervised/ZS |||||||||
-|DBLP:journals/corr/abs-2111-03017 ZS | 28.0 | 60.0 | - | - | 32.0 | 58.0 | - | - |
-|DBLP:conf/mm/CheukHS21 | - | - | 75.2 | 79.5 | - | - | - | - |
+|**Supervised** |||||||||
+|Hawthorne et al., 19 | 95.3 | 90.2 | 86.4 | 84.9 | - | - | - | - |
+<!-- | DBLP:journals/taslp/KongLSWW21 | 96.7 | 89.6 | - | - | - | - | - | - | -->
+|Gardenr et al., 2021| 96.0 | 88.0 | - | - | - | - | - | - |
+| **Weakly/self-supervised/ZS** |||||||||
+|Gardenr et al., 2021 ZS | 28.0 | 60.0 | - | - | 32.0 | 58.0 | - | - |
+|Cheuk et al., 21 | - | - | 75.2 | 79.5 | - | - | - | - |
 |Synth | 83.8 | 74.7 | 79.1 | 76.6 | 68.4 | 72.9 | 72.0 | 59.8 |
 |MusicNet | 57.5 | 57.9 | 53.4 | 74.3 | 10.0 | 57.2 | 41.5 | 66.7 |
 |MusicNetEM (ours) | 89.7 | 76.0 | 87.3 | 79.6 | 82.9 | 81.6 | 88.8 | 82.8 |
