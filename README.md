@@ -2,7 +2,7 @@
 
 Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org).
 ![alt text](https://github.com/benadar293/benadar293.github.io/blob/main/teaser.PNG?raw=true)
-
+<!-- 
 || **MAESTRO** || **MAPS** || **GuitarSet** || **MusicNetEM** ||
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** | **Note F1** | **Frame F1** |
@@ -71,3 +71,4 @@ We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch 
 
 
 To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org), including synthetic data pre-training and pitch shift augmentation, is required.
+ -->
