@@ -76,3 +76,7 @@ Links to performances used for demonstration:
 [Maddona, La Isla Bonita](https://www.youtube.com/watch?v=zpzdgmqIHOQ&ab_channel=Madonna)
 
 [Toto, Africa](https://www.youtube.com/watch?v=FTQbiNvZqaY&ab_channel=TotoVEVO)
+
+[ABBA, Gimme](https://www.youtube.com/watch?v=JWay7CDEyAI&ab_channel=CraigGagn%C3%A9)
+
+[Dick Dale and the Del Tones, Misirlou (Pulp Fiction Soundtrack)](https://www.youtube.com/watch?v=1hLIXrlpRe8)
