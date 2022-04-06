@@ -71,6 +71,10 @@ To reproduce the results from the paper, the EM process, as described in the [pa
 
 Links to performances used for demonstration:
 
+[Mozart, Eine Kleine Nachtmusik](https://www.youtube.com/watch?v=oy2zDJPIgwc&ab_channel=AllClassicalMusic)
+
+[Julien Salemkour, Mozart Symphony NO. 40](https://www.youtube.com/watch?v=wqkXqpQMk2k&ab_channel=EuroArtsChannel)
+
 [Trevor Pinnock, Bach Harpsichord Concerto No. 1](https://www.youtube.com/watch?v=R66fz9yxzAk&ab_channel=SoliDeoGloria8550)
 
 [Nino Gvetadze, Brahms Piano Concerto No. 2](https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan)
