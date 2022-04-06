@@ -79,6 +79,8 @@ Links to performances used for demonstration:
 
 [Trevor Pinnock, Bach Harpsichord Concerto No. 1](https://www.youtube.com/watch?v=R66fz9yxzAk&ab_channel=SoliDeoGloria8550)
 
+[Frank Monster, Bach Inverntion No. 8](https://www.youtube.com/watch?v=whbFffxr2q4&ab_channel=NetherlandsBachSociety)
+
 [Nino Gvetadze, Brahms Piano Concerto No. 2](https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan)
 
 [Desireless, Voyage](https://www.youtube.com/watch?v=NlgmH5q9uNk&ab_channel=Desireless)
