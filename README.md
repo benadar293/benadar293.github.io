@@ -89,6 +89,8 @@ Links to performances excerpts of which we used for demonstration:
 
 [Arturo Benedetti Michelangeli, Carlo Maria Giulini, & Wiener Symphoniker, Beethoven Piano Concerto No. 5](https://www.youtube.com/watch?v=TahrEIVu4nQ&ab_channel=pianoconc2)
 
+[United States Marine Band, John Philip Sousa's "The Stars and Stripes Forever"](https://www.youtube.com/watch?v=a-7XWhyvIpE&ab_channel=UnitedStatesMarineBand)
+
 [Desireless, Voyage](https://www.youtube.com/watch?v=NlgmH5q9uNk&ab_channel=Desireless)
 
 [Maddona, La Isla Bonita](https://www.youtube.com/watch?v=zpzdgmqIHOQ&ab_channel=Madonna)
