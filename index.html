@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Unaligned Supervision for Automatic Music Transcription in The Wild">
+  <meta name="keywords" content="AMT, Music Transcription, Automatic Music Transcription">
+  <meta name="viewport" content=content="width=device-width, initial-scale=1">
+  <title>Unaligned Supervision for Automatic Music Transcription in The Wild.</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+
+
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-widescreen">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Unaligned Supervision for Automatic Music Transcription in The Wild</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Ben Maman<sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.cs.tau.ac.il/~amberman/">Amit Bermano</a><sup>1</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Tel Aviv University,</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/our_amt_paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/our_amt_paper.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=our_video.avi"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/our_repo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+
+
+<section class="section">
+  <div class="container is-widescreen">
+
+    <div class="columns is-centered">
+
+
+          <video controls autoplay width="60%">
+            <source src="Video_Unaligned_Supervision_for_Automatic_Music_Transcription_in_The_Wild.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-widescreen">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+	  <p>
+	  Multi-instrument Automatic Music Transcription (AMT), or the decoding of a musical recording into semantic musical 	  content, is one of the holy grails of Music Information Retrieval. Current AMT approaches are restricted to piano 	  and (some) guitar recordings, due to difficult data collection. In order to overcome data collection barriers, 	  previous AMT approaches attempt to employ musical scores in the form of a digitized version of the same song or 	  	  piece. The scores are typically aligned using audio features and strenuous human intervention to generate training 	  labels.
+	  </p>
+          <p>
+	  We introduce NoteEM, a method for simultaneously training a transcriber and aligning the scores to their 	  corresponding performances, in a fully-automated process. Using this unaligned supervision scheme, 	  complemented by pseudo-labels and pitch shift augmentation, our method enables training on in-the-wild recordings 	  with unprecedented accuracy and instrumental variety. Using only synthetic data and unaligned supervision, we 	  report SOTA note-level accuracy of the MAPS dataset, and large favorable margins on cross-dataset evaluations. We 	  also demonstrate robustness and ease of use; we report comparable results when training on a small, easily 	  obtainable, self-collected dataset, and we propose alternative labeling to the MusicNet dataset, which we show to 		  be more accurate.
+	  </p>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+<div class="content has-text-justified">
+          <p>
+            We provide here example transcriptions done by our system of famous pieces and songs, toegether with quantitative results on various benchmarks. We also provide here our <a href="musicnet_em.zip">improved labels</a> for the
+<a href="https://arxiv.org/abs/1611.09827"> MusicNet </a> dataset (the original dataset can be found <a href="https://www.kaggle.com/imsparsh/musicnet-dataset">here</a>). The labels were generated automatically by our method. We refer to MusicNet recordings with our labels as MusicNetEM. We provide a baseline for training from scratch on MusicNetEM, including cross-dataset evaluation.
+          </p>
+        </div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-widescreen">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+
+
+
+        <div class="columns is-centered is-gapless">
+
+
+          <div class="column">
+              <h2 class="title is-7">Bach Concerto original.</h2>
+              <!-- <video id="dollyzoom" controls height="100%">
+                <source src="D:\Website transcriptions\html audio/bach concerto audio.mp4"
+                        type="video/mp4">
+
+              </video> -->
+              <iframe width="100%" height="122" src="https://www.youtube.com/embed/R66fz9yxzAk?start=207&end=228">
+              </iframe>
+
+
+          </div>
+          <!--/ Visual Effects. -->
+
+          <!-- Matting. -->
+          <div class="column">
+            <h2 class="title is-7">Bach Concerto transcription</h2>
+            <!-- <div class="columns is-centered">
+              <div class="column"> -->
+                <video id="matting-video" controls height="100%">
+                  <source src="D:\Website transcriptions\html midi/bach concerto.mp4"
+                          type="video/mp4">
+                </video>
+              <!-- </div>
+
+            </div> -->
+          </div>
+
+        </div>
+
+        <h2 class="title mt-0 is-7">
+          Source: <a href="https://www.youtube.com/watch?v=R66fz9yxzAk&ab_channel=SoliDeoGloria8550">https://www.youtube.com/watch?v=R66fz9yxzAk&ab_channel=SoliDeoGloria8550</a>
+        </h2>
+      </div>
+
+  <div class="column">
+
+
+
+    <div class="columns is-centered is-gapless">
+      <div class="column">
+          <h2 class="title is-7">Carmen original</h2>
+          <!-- <video id="dollyzoom" controls height="100%">
+            <source src="D:\Website transcriptions\html audio/carmen audio.mp4"
+                    type="video/mp4">
+          </video> -->
+          <iframe width="100%" height="122" src="https://www.youtube.com/embed/jL-Csf1pNCI?start=160&end=182">
+          </iframe>
+
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Carmen transcription</h2>
+          <video id="dollyzoom" controls loop height="100%">
+            <source src="D:\Website transcriptions\html midi/carmen.mp4"
+                    type="video/mp4">
+          </video>
+
+      </div>
+
+    </div>
+    <h2 class="title is-7">Source: <a href="https://www.youtube.com/watch?v=jL-Csf1pNCI&ab_channel=FranceMusique">https://www.youtube.com/watch?v=jL-Csf1pNCI&ab_channel=FranceMusique</a> </h2>
+
+  </div>
+
+
+  <div class="column">
+  <div class="columns is-centered is-gapless">
+
+<!--
+
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-6">Brahms Piano Concerto original</h2>
+        <video id="dollyzoom" autoplay controls height="100%">
+          <source src="D:/onsets-and-frames-master/transcription visualizations/audio/short/brahms concerto 2 audio.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+      <h2 class="title is-6">Brahms Piano Concerto transcription</h2>
+      <div class="columns is-centered">
+        <div class="column content">
+          <video id="matting-video" controls height="100%">
+            <source src="D:/onsets-and-frames-master/transcription visualizations/transcriber-220107-103722-model-7_best_frame/AV/short/short/brahms piano concerto.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <h2 class="title is-7">
+    Source: <a href="https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan">https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan</a>
+    </h2> -->
+
+
+
+
+<!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Eine Kleine Nachtmusik original</h2>
+          <!-- <video id="dollyzoom" autoplay controls height="100%">
+            <source src="html audio/eine kleine nachtmusik audio.mp4"
+                    type="video/mp4">
+          </video> -->
+          <iframe width="100%" height="122" src="https://www.youtube.com/embed/oy2zDJPIgwc?start=5&end=31">
+          </iframe>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-7">Eine Kleine Nachtmusik transcr.</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" controls height="100%">
+              <source src="html midi/eine kleine nachtmusik.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <h2 class="title is-7">
+    Source: <a href="https://www.youtube.com/watch?v=oy2zDJPIgwc&ab_channel=AllClassicalMusic">https://www.youtube.com/watch?v=oy2zDJPIgwc&ab_channel=AllClassicalMusic</a>
+    </h2>
+
+  </div>
+
+
+    </div>
+
+<br><br>
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+
+
+
+        <div class="columns is-centered is-gapless">
+
+
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-7">Mozart Symphony 40 original</h2>
+              <!-- <video id="dollyzoom" controls height="100%">
+                <source src="html audio/mozart symphony 40 audio.mp4"
+                        type="video/mp4">
+              </video> -->
+              <iframe width="100%" height="122" src="https://www.youtube.com/embed/wqkXqpQMk2k?start=40&end=71">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-7">Mozart Symphony 40 transcription</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video id="matting-video" controls height="100%">
+                  <source src="html midi/mozart symphony 40.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <h2 class="title is-7">Source: <a href="https://www.youtube.com/watch?v=wqkXqpQMk2k">https://www.youtube.com/watch?v=wqkXqpQMk2k</a> </h2>
+      </div>
+
+  <div class="column">
+
+
+
+    <div class="columns is-centered is-gapless">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Beethoven Wind Sextet original</h2>
+          <video id="dollyzoom" controls height="100%">
+            <source src="html audio/2416 audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Beethoven Wind Sextet transcription</h2>
+          <video id="dollyzoom" controls loop height="100%">
+            <source src="html midi/2416.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+    </div>
+    <h2 class="title is-7">Source: MusicNet 2416</h2>
+  </div>
+
+  <div class="column">
+  <div class="columns is-centered is-gapless">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Bach Invention original</h2>
+          <!-- <video id="dollyzoom" autoplay controls height="100%">
+            <source src="html audio/invention audio.mp4"
+                    type="video/mp4">
+          </video> -->
+          <iframe width="100%" height="122" src="https://www.youtube.com/embed/whbFffxr2q4?start=5&end=25">
+          </iframe>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-7">Bach Invention transcription</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" controls height="100%">
+              <source src="html midi/invention.mp4"
+                      type="video/mp4">
+            </video>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <h2 class="title is-7">
+    Source: <a href="https://www.youtube.com/watch?v=whbFffxr2q4&ab_channel=NetherlandsBachSociety">https://www.youtube.com/watch?v=whbFffxr2q4&ab_channel=NetherlandsBachSociety</a>
+    </h2>
+
+  </div>
+
+
+    </div>
+
+
+
+
+    <br><br>
+
+
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+
+
+
+        <div class="columns is-centered is-gapless">
+
+
+
+
+
+
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-7">Indiana Jones original</h2>
+              <!-- <video id="dollyzoom" controls height="100%">
+                <source src="html audio/indiana audio.mp4"
+                        type="video/mp4">
+              </video> -->
+              <iframe width="100%" height="122" src="https://www.youtube.com/embed/-bTpp8PQSog?end=38">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-7">Indiana Jones transcription</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video id="matting-video" controls height="100%">
+                  <source src="html midi/indiana.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <h2 class="title is-7">Source: <a href="https://www.youtube.com/watch?v=-bTpp8PQSog&ab_channel=Vyrium">https://www.youtube.com/watch?v=-bTpp8PQSog&ab_channel=Vyrium</a> </h2>
+      </div>
+
+    <div class="column">
+
+
+
+    <div class="columns is-centered is-gapless">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Beethoven Concerto original</h2>
+          <!-- <video id="dollyzoom" controls height="100%">
+            <source src="html audio/beethoven concerto audio.mp4"
+                    type="video/mp4">
+          </video> -->
+          <iframe width="100%" height="122" src="https://www.youtube.com/embed/TahrEIVu4nQ?start=96&end=155">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Beethoven Concerto transcription</h2>
+          <video id="dollyzoom" controls loop height="100%">
+            <source src="html midi/beethoven concerto.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+    <h2 class="title is-7">Source: <a href="https://www.youtube.com/watch?v=TahrEIVu4nQ&ab_channel=pianoconc2">https://www.youtube.com/watch?v=TahrEIVu4nQ&ab_channel=pianoconc2</a></h2>
+    </div>
+
+    <div class="column">
+    <div class="columns is-centered is-gapless">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Beethoven String Quartet original</h2>
+          <video id="dollyzoom" autoplay controls height="100%">
+            <source src="html audio/2382 audio.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-7">Beethoven String Quartet transcr.</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" controls height="100%">
+              <source src="html midi/2382.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title is-7">
+    Source: MusicNet 2382
+  </h2>
+
+    </div>
+
+
+    </div>
+<br>
+    <h2 class="title is-5">Pop Music & Singing</h2>
+    <p>
+      We show initial results for pop music, including human singing, fine-tuned on a small pop dataset:
+    </p>
+<section class="section">
+
+  <div class="container is-widescreen">
+
+
+    <div class="columns is-centered">
+
+      <div class="column">
+
+
+
+<!-- <div class="columns is-centered is-gapless">
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-7">Eye of The Tiger original</h2>
+            <video id="dollyzoom" controls height="100%">
+              <source src="D:\Website transcriptions\Ours\audio/tiger.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-7">Eye of The Tiger transcription</h2>
+            <video id="dollyzoom" controls loop height="100%">
+              <source src="D:\Website transcriptions\Ours\Pop\transcriber-220318-023027-model_best_dtw2\AV\Final/tiger.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <h2 class="title is-7">Source: <a href="https://www.youtube.com/watch?v=btPJPFnesV4&ab_channel=SurvivorVEVO">https://www.youtube.com/watch?v=btPJPFnesV4&ab_channel=SurvivorVEVO</a> </h2>
+      </div> -->
+
+
+
+
+        <div class="columns is-centered is-gapless">
+
+
+
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-7">Voyage original</h2>
+              <iframe width="100%" height="117" src="https://www.youtube.com/embed/NlgmH5q9uNk?start=53&end=73">
+              </iframe>
+              <!-- <video id="dollyzoom" autoplay controls height="100%">
+                <source src="html audio/voyage audio.mp4"
+                        type="video/mp4">
+              </video> -->
+            </div>
+          </div>
+
+          <div class="column">
+            <h2 class="title is-7">Voyage transcription</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <video id="matting-video" controls height="100%">
+                  <source src="html midi/voyage.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <h2 class="title is-7">
+        Source: <a href="https://www.youtube.com/watch?v=NlgmH5q9uNk&ab_channel=Desireless">https://www.youtube.com/watch?v=NlgmH5q9uNk&ab_channel=Desireless</a>
+        </h2>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="column">
+            <div class="columns is-centered is-gapless">
+
+      <!-- <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Eye of The Tiger original</h2>
+          <video id="dollyzoom" controls height="100%">
+            <source src="D:\Website transcriptions\Ours\audio/tiger.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Eye of The Tiger transcription</h2>
+          <video id="dollyzoom" controls loop height="100%">
+            <source src="D:\Website transcriptions\Ours\Pop\transcriber-220318-023027-model_best_dtw2\AV\Final/tiger.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <h2 class="title is-7">Source: <a href="https://www.youtube.com/watch?v=btPJPFnesV4&ab_channel=SurvivorVEVO">https://www.youtube.com/watch?v=btPJPFnesV4&ab_channel=SurvivorVEVO</a> </h2>
+  </div> -->
+  <div class="column">
+    <div class="content">
+      <h2 class="title is-7">La Isla Bonita original</h2>
+      <!-- <video id="dollyzoom" controls height="100%">
+        <source src="html audio/isla bonita audio.mp4"
+                type="video/mp4">
+      </video> -->
+      <iframe width="100%" height="117" src="https://www.youtube.com/embed/ZmzjH6OjjIA">
+      </iframe>
+    </div>
+  </div>
+  <!--/ Visual Effects. -->
+
+<!-- Visual Effects. -->
+  <div class="column">
+    <div class="content">
+      <h2 class="title is-7">La Isla Bonita transcription</h2>
+      <video id="dollyzoom" controls loop height="100%">
+        <source src="html midi/isla bonita.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+<h2 class="title is-7">Source: <a href="https://www.youtube.com/watch?v=zpzdgmqIHOQ&ab_channel=Madonna">https://www.youtube.com/watch?v=zpzdgmqIHOQ&ab_channel=Madonna</a> </h2>
+</div>
+
+  <div class="column">
+      <div class="columns is-centered is-gapless">
+
+
+
+        <div class="column">
+
+      <div class="content">
+          <h2 class="title is-7">Toto Africa original </h2>
+        <!-- <video id="dollyzoom" autoplay controls height="100%">
+          <source src="html audio/africa audio.mp4"
+                  type="video/mp4">
+        </video> -->
+        <iframe width="100%" height="117" src="https://www.youtube.com/embed/FTQbiNvZqaY">
+        </iframe>
+      </div>
+      </div>
+
+      <div class="column">
+      <div class="content">
+        <h2 class="title is-7">Toto Africa transcription </h2>
+
+        <video id="dollyzoom" controls height="100%">
+          <source src="html midi/africa.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      </div>
+
+      </div>
+      <h2 class="title is-7">Source: <a href="https://www.youtube.com/watch?v=FTQbiNvZqaY&ab_channel=TotoVEVO"> https://www.youtube.com/watch?v=FTQbiNvZqaY&ab_channel=TotoVEVO </a> </h2>
+
+
+
+      <!-- <div class="column">
+        <div class="content">
+          <h2 class="title is-7">Voyage original</h2>
+          <video id="dollyzoom" autoplay controls height="100%">
+            <source src="D:\Website transcriptions\Ours\audio/voyage.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2 class="title is-7">Voyage transcription</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" controls height="100%">
+              <source src="D:\Website transcriptions\Ours\Pop\transcriber-220318-023027-model_best_dtw2\AV\Final/voyage.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <h2 class="title is-7">
+    Source: <a href="https://www.youtube.com/watch?v=NlgmH5q9uNk&ab_channel=Desireless">https://www.youtube.com/watch?v=NlgmH5q9uNk&ab_channel=Desireless</a>
+    </h2> -->
+  </div>
+</div></div></div>
+
+<section class="section">
+  <div class="container is-widescreen">
+<h2 class="title is-3">Comparisons</h2>
+<p>
+We show here qualitative comparisons with two models: <a href="https://github.com/magenta/mt3">MT3</a> (<a href="">Gardner et al., 2021</a>) and <a href="https://music-and-culture-technology-lab.github.io/omnizart-doc/"> Omnizart </a> (<a href="https://ieeexplore.ieee.org/document/9222310">Wu et al., 2020</a>):
+</p>
+
+<br>
+<div class="columns is-centered">
+
+
+
+	<div class="column">
+	<div class="columns is-gapless">
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">ABBA Gimme original</h2>
+          <iframe width="100%" height="124" src="https://www.youtube.com/watch?v=XEjLoHdbVeE">
+          </iframe>
+          <!-- <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html audio/gimme audio.mp4"
+                    type="video/mp4">
+          </video> -->
+        </div>
+	</div>
+
+
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">ABBA Gimme MT3 transcription</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html midi/gimme MT3.mp4" type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+
+
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">ABBA Gimme our transcription</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html midi/gimme.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+	</div>
+  <h2 class="title is-7">
+	Source: <a href="https://www.youtube.com/watch?v=XEjLoHdbVeE"> https://www.youtube.com/watch?v=XEjLoHdbVeE </a>
+</h2>
+  <br><br>
+
+
+  <div class="columns is-gapless">
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Pulp Fiction original</h2>
+
+          <!-- <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html audio/pulp fiction audio.mp4"
+                    type="video/mp4">
+          </video> -->
+          <iframe width="100%" height="124" src="https://www.youtube.com/embed/1hLIXrlpRe8">
+          </iframe>
+        </div>
+	</div>
+
+
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Pulp Fiction MT3</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html midi/pulp fiction MT3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Pulp Fiction Ours</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html midi/pulp fiction.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+	</div>
+  <h2 class="title is-7">
+	Source: <a href="https://www.youtube.com/watch?v=1hLIXrlpRe8"> https://www.youtube.com/watch?v=1hLIXrlpRe8 </a>
+</h2>
+
+
+
+  <br><br>
+
+  <div class="columns is-gapless">
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Stars and Stripes original</h2>
+          <iframe width="100%" height="124" src="https://www.youtube.com/embed/YzZy1is6ZRU">
+          </iframe>
+          <!-- <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html audio/stars audio.mp4"
+                    type="video/mp4">
+          </video> -->
+        </div>
+	</div>
+
+
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Stars and Stripes Omnizart</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html midi/stars Omnizart.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Stars and Stripes Ours</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html midi/stars.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+	</div>
+  <h2 class="title is-7">
+	Source: <a href="https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan">https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan</a>
+  </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+<div class="column">
+	<div class="columns is-gapless">
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Hungarian Dance original</h2>
+          <iframe width="100%" height="123" src="https://www.youtube.com/embed/Nzo3atXtm54?start=33&end=57">
+          </iframe>
+          <!-- <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html audio/hungarian audio.mp4"
+                    type="video/mp4">
+          </video> -->
+        </div>
+	</div>
+
+
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Hungarian Dance MT3</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html midi/hungarian MT3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+
+
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Hungarian Dance ours</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html midi/hungarian.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+	</div>
+  <h2 class="title is-7">
+	Source: <a href="https://www.youtube.com/watch?v=Nzo3atXtm54&ab_channel=MelosKonzerte">https://www.youtube.com/watch?v=Nzo3atXtm54&ab_channel=MelosKonzerte</a>
+  </h2>
+  <br><br>
+
+
+  <div class="columns is-gapless">
+
+  <div class="column">
+  <div class="content">
+          <h2 class="title is-7">Barber of Seville original</h2>
+
+          <!-- <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html audio/barber audio.mp4"
+                    type="video/mp4">
+          </video> -->
+          <iframe width="100%" height="123" src="https://www.youtube.com/embed/OloXRhesab0?start=127&end=160">
+          </iframe>
+        </div>
+  </div>
+
+  <div class="column">
+  <div class="content">
+          <h2 class="title is-7">Barber of Seville MT3</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html midi/barber MT3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+  </div>
+
+  <div class="column">
+  <div class="content">
+          <h2 class="title is-7">Barber of Seville ours</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html midi/barber.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+  </div>
+
+  </div>
+  <h2 class="title is-7">
+  Source: <a href="https://www.youtube.com/watch?v=OloXRhesab0&t=2s&ab_channel=ClassicalMusicOnly">https://www.youtube.com/watch?v=OloXRhesab0&t=2s&ab_channel=ClassicalMusicOnly</a>
+  </h2>
+  <br><br>
+
+  <div class="columns is-gapless">
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Brahms original</h2>
+          <iframe width="100%" height="123" src="https://www.youtube.com/embed/YzZy1is6ZRU">
+          </iframe>
+          <!-- <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="D:/Website transcriptions/html audio/brahms concerto audio.mp4"
+                    type="video/mp4">
+          </video> -->
+        </div>
+	</div>
+
+
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Brahms Omnizart</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html midi/brahms concerto Omnizart.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+	<div class="column">
+	<div class="content">
+          <h2 class="title is-7">Brahms Ours</h2>
+
+          <video id="dollyzoom" autoplay controls width="100%" height="auto">
+            <source src="html midi/brahms concerto.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+	</div>
+
+	</div>
+  <h2 class="title is-7">
+	Source: <a href="https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan">https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan</a>
+  </h2>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+<br><br>
+
+<!-- <section class="section">
+  <div class="container is-widescreen"> -->
+<h2 class="title is-3">Quantitative Results</h2>
+<p>
+We show here quantitative results on MAESTRO, MAPS, GuitarSet, and MusicNetEM
+(MusicNet recordings with our generated labels).
+We do not use MAESTRO, MAPS, GuitarSet for training. The system is initially
+trained on synthetic data ("Synth", 4-th row from the bottom), and then further
+trained on real data with labels generated by our method. Therefore our method
+belongs to the Self-/Weakly-Supervised/Zero-Shot category.
+<br>
+
+<!-- As can be seen, supervised methods reach high accuracy on same-dataset
+evaluation, but have difficulty in cross-dataset/zero-shot evaluation (Gardner
+et al., 2021 ZS). They are also limited to piano and guitar because of lack of
+data.
+<br> -->
+
+We use two setings (two bottom rows): training on MusicNet recordings, with
+our generated labels (MusicNetEM), and training on self-collected data with our generated
+labels (Self-Collected). For comparison, we also further train the initial model
+on MusicNet with the original labels (third row from the bottom). The results
+clearly show that our MusicNetEM labels are significantly more accurate than the
+original labels, especially in onset timing.
+</p>
+
+<br><br>
+
+<div class="columns is-centered">
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2"><center>MAESTRO</center></th>
+
+<th colspan="2"><center>MAPS</center></th>
+
+<th colspan="2"><center>GuitarSet</center></th>
+<th colspan="2"><center>MusicNetEM</center></th>
+    </tr>
+  </thead>
+
+<thead>
+<tr>
+<th></th>
+<th>Note</th>
+<th>Frame</th>
+<th>Note</th>
+<th>Frame</th>
+<th>Note</th>
+<th>Frame</th>
+<th>Note</th>
+<th>Frame</th>
+</tr>
+</thead>
+
+  <tbody>
+
+</td> <td><strong> Supervised </strong> </td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></tr>
+<tr><td><a href="https://arxiv.org/abs/1810.12247"> Hawthorne et al., 2019 </a> </td> <td> 95.3 </td> <td> 90.2 </td> <td> 86.4 </td> <td> 84.9 </td> <td> - </td> <td> - </td> <td> - </td> <td> - </tr>
+<tr><td><a href="https://arxiv.org/abs/2111.03017"> Gardner et al., 2021 </a></td> <td> 96.0 </td> <td> 88.0 </td> <td> - </td> <td> - </td> <td> 90.0 </td> <td> 89.0 </td> <td> - </td> <td> - </tr>
+<tr><td> <strong> Weakly/self-supervised/ZS </strong> </td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></tr>
+<tr><td><a href="https://arxiv.org/abs/2111.03017"> Gardner et al., 2021 </a> ZS </td> <td> 28.0 </td> <td> 60.0 </td> <td> - </td> <td> - </td> <td> 32.0 </td> <td> 58.0 </td> <td> - </td> <td> - </tr>
+<tr><td><a href="https://arxiv.org/abs/2107.04954"> Cheuk et al., 2021 </a> </td> <td> - </td> <td> - </td> <td> 75.2 </td> <td> 79.5 </td> <td> - </td> <td> - </td> <td> - </td> <td> - </tr>
+<tr><td>Synth </td> <td> 83.8 </td> <td> 74.7 </td> <td> 79.1 </td> <td> 76.6 </td> <td> 68.4 </td> <td> 72.9 </td> <td> 72.0 </td> <td> 59.8 </tr>
+<tr><td><a href="https://arxiv.org/abs/1611.09827"> MusicNet </a> </td> <td> 57.5 </td> <td> 57.9 </td> <td> 53.4 </td> <td> 74.3 </td> <td> 10.0 </td> <td> 57.2 </td> <td> 41.5 </td> <td> 66.7 </tr>
+<tr><td><a href="https://link-url-here.org"> MusicNetEM </a> (ours) </td> <td> <strong> 89.7 </strong> </td> <td> 76.0 </td> <td> <strong> 87.3 </strong> </td> <td> 79.6 </td> <td> <strong> 82.9 </strong> </td> <td> <strong> 81.6 </strong> </td> <td> <strong> 88.8 </strong> </td> <td> <strong> 82.8 </strong> </tr>
+<tr><td><a href="https://link-url-here.org"> Self-collected </a> (ours) </td> <td> 89.6 </td> <td> <strong> 76.8 </strong> </td> <td> 86.6 </td> <td> <strong> 80.9 </strong> </td> <td> 82.2 </td> <td> 79.3 </td> <td> - </td> <td> - </td> <tr>
+
+
+  </tbody>
+</table>
+</div>
+<br>
+        <h2 class="title is-3">MusicNetEM</h2>
+
+        <!-- Interpolating. -->
+
+          <p>
+            We provide here our improved labels for the <a href="https://arxiv.org/abs/1611.09827">MusicNet dataset </a> (the original dataset can be found <a href="https://www.kaggle.com/imsparsh/musicnet-dataset"> here </a>). The labels are in the form of MIDI files aligned with the audio, and include instrument information. Onset timing accuracy of the labels is 32ms, which is sufficient to train a transcriber. Onset timings in the original MusicNet labels are not accurate enough for this.
+
+Our labels were generated automatically by an EM process similar to the one described in our paper <a href="https://link-url-here.org"> Unaligned Supervision for Automatic Music Transcription in The Wild </a>. We improved the alignment algorithm, and in order to get more accurate labels, we divided the datast into three groups, based on the ensembles: piano solo, strings, and wind. We performed the EM process on each group separately.
+<br><br>
+
+<h3 class="title is-4">Baseline</h3>
+You can train from scratch the architecture from the <a href="https://arxiv.org/abs/1810.12247">MAESTRO paper</a> on MusicNet recordings with our labels.
+
+For note-with-instrument transcription, use N_KEYS * (N_INSTRUMENTS + 1) onset classes, one for each note/instrument combination, and additional N_KEYS for pitch indepenedent of instrument.
+We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch size 8, without any augmentation, we've reached:
+<br><br>
+<div class="columns is-centered">
+<table class="table is-bordered is-narrow">
+<thead>
+<tr>
+<th> </th> <th colspan="1"> <strong>note F1</strong> </th> <th> <strong>note-with-inst. F1</strong> </th> <th> <strong>frame F1</strong> </th> <th> <strong>note-with-offset F1</strong> </tr>
+</thead>
+<tbody>
+<tr><td><strong>MAPS</strong></td><td>82.0</td><td>82.0</td><td>69.1</td><td>37.7</tr>
+<tr><td><strong>MAESTRO</strong></td><td>85.0</td><td>85.0</td><td>65.2</td> <td>31.9</tr>
+<tr><td><strong>GuitarSet</strong></td><td>72.8</td><td>-</td><td>68.4</td> <td>30.7</tr>
+<tr><td><strong>MusicNetEM</strong></td><td>91.4</td><td>88.1</td><td>82.5</td><td>71.4</tr>
+<tr><td><strong>MusicNetEM wind</strong></td><td>88.5</td><td>79.9</td><td>83.1</td><td>65.0</tr>
+<tr><td><strong>MusicNetEM strings</strong></td><td>89.1</td><td>85.5</td><td>82.6</td><td>77.7</tr>
+<tr><td><strong>MusicNetEM strings</strong>*</td><td>85.9</td><td>81.1</td><td>79.0</td><td>75.1</td>
+</tbody>
+</table>
+</div>
+
+The split we use for wind and string instruments is the same as in <a href="https://arxiv.org/abs/2107.04954"> Cheuk et al., 2021 </a>. We also show evaluation on pieces from the MusicNet test set that include string instruments only (last row, <strong>MusicNetEM strings</strong>*).
+<br>
+When evaluating by instrument, we've achieved in this setting:
+<br><br>
+<div class="columns is-centered">
+<table class="table is-bordered is-narrow">
+<thead>
+<tr>
+</td> <td> test instrument </td> <td> note-with-inst. F1 </tr>
+</thead>
+<tbody>
+<tr><td> <strong> Violin </strong> </td> <td> 87.3 </tr>
+<tr><td> <strong> Viola </strong> </td> <td> 61.1 </tr>
+<tr><td> <strong> Cello </strong> </td> <td> 79.9 </tr>
+<tr><td><strong> Bassoon </strong> </td> <td> 78.0 </tr>
+<tr><td><strong> Clarinet </strong> </td> <td> 86.8 </tr>
+<tr><td> <strong> Horn </strong> </td> <td> 75.0 </td>
+</tbody>
+</table>
+</div>
+
+
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+<section class="section" id="Credits">
+  <div class="container is-widescreen content">
+    <h2 class="title">Credits</h2>
+  For MIDI visualization we used the MIDI visualizer tool created by Simon Rodriguez available <a href="https://github.com/kosua20/MIDIVisualizer">here</a>.
+  <br>
+  For the website we used the source code from the <a href="https://github.com/nerfies/nerfies.github.io"> Nerfies website </a>.
+  <!-- For MIDI soundfonts we used: <br>
+  (1) The Fluid Release 3 General-MIDI Soundfont (FluidR3_GM.sf2) avilable <a href="https://member.keymusician.com/Member/FluidR3_GM/index.html"> here</a>.<br>
+(2) The MuseScore General soundfont (MuseScore_General.sf2) avilable <a href=" https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General"> here</a>.<br> -->
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/benadar293" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            © Ben Maman (Tel Aviv University) and Amit Bermano (Tel Aviv University) 2022.
+
+            This project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license. This means you can share and adapt under the following conditions:
+<br>
+            1) Attribution - give appropriate credit to the authors.
+<br>
+            2) Non-commercial use only.
+<br>
+            3) ShareAlike — you must distribute your contributions under the same license as the original.
+
+<br>
+
+
+            <!-- This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
