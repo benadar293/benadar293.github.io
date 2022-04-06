@@ -3,7 +3,7 @@ Ben Maman and Amit Bermano, ["Unaligned Supervision for Automatic Music Transcri
 We provide here example transcriptions done by our system of famous pieces and songs, toegether with quantitative results on various benchmarks. We also provide here our improved labels for the MusicNet dataset (the original dataset can be found here). The labels were generated automatically by our method. We refer to MusicNet recordings with our labels as MusicNetEM. We provide a baseline for training from scratch on MusicNetEM, including cross-dataset evaluation.
 
 Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org).
-![Alt text](images/teaser.PNG "Title")
+![alt text](teaser.png "Title")
 <!-- 
 || **MAESTRO** || **MAPS** || **GuitarSet** || **MusicNetEM** ||
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
