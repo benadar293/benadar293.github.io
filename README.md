@@ -81,7 +81,11 @@ Links to performances used for demonstration:
 
 [Frank Monster, Bach Inverntion No. 8](https://www.youtube.com/watch?v=whbFffxr2q4&ab_channel=NetherlandsBachSociety)
 
+[Hungarian Symphony Orchestra, Brahms Hungarian Dance NO. 5](https://www.youtube.com/watch?v=Nzo3atXtm54&ab_channel=MelosKonzerte)
+
 [Nino Gvetadze, Brahms Piano Concerto No. 2](https://www.youtube.com/watch?v=YzZy1is6ZRU&ab_channel=Levan)
+
+[Arturo Benedetti Michelangeli, Carlo Maria Giulini, & Wiener Symphoniker, Beethoven Piano Concerto No. 5](https://www.youtube.com/watch?v=TahrEIVu4nQ&ab_channel=pianoconc2)
 
 [Desireless, Voyage](https://www.youtube.com/watch?v=NlgmH5q9uNk&ab_channel=Desireless)
 
