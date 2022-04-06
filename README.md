@@ -4,8 +4,10 @@ We provide here example transcriptions done by our system of famous pieces and s
 
 # benadar293.github.io
 
+# benadar293.github.io
+
 Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org).
-![alt text](https://github.com/benadar293/benadar293.github.io/blob/main/teaser.PNG?raw=true)
+![alt text](images/teaser.PNG?raw=true)
 <!-- 
 || **MAESTRO** || **MAPS** || **GuitarSet** || **MusicNetEM** ||
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
