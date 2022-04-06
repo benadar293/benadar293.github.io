@@ -2,6 +2,8 @@ Ben Maman and Amit Bermano, "Unaligned Supervision for Automatic Music Transcrip
 
 We provide here example transcriptions done by our system of famous pieces and songs, toegether with quantitative results on various benchmarks. We also provide here our improved labels for the MusicNet dataset (the original dataset can be found here). The labels were generated automatically by our method. We refer to MusicNet recordings with our labels as MusicNetEM. We provide a baseline for training from scratch on MusicNetEM, including cross-dataset evaluation.
 
+# benadar293.github.io
+
 Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org).
 ![alt text](https://github.com/benadar293/benadar293.github.io/blob/main/teaser.PNG?raw=true)
 <!-- 
@@ -65,11 +67,6 @@ We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch 
 |**Bassoon** | 78.0 |
 |**Clarinet** | 86.8 |
 | **Horn** | 75.0 |
-
-| `git status` | List all *new or modified* files |
-
-| `git diff` | Show file differences that **haven't been** staged |
-| MusicNetEM test | Show file differences that **haven't been** staged |
 
 
 To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org), including synthetic data pre-training and pitch shift augmentation, is required.
