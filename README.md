@@ -81,4 +81,4 @@ Links to performances used for demonstration:
 
 [Dick Dale and the Del Tones, Misirlou (Pulp Fiction Soundtrack)](https://www.youtube.com/watch?v=1hLIXrlpRe8)
 
-[John Williams, Boston Pops Orchestra, Indiana Jones Theme Song](https://www.youtube.com/watch?v=-bTpp8PQSog&ab_channel=Vyrium)
+[John Williams & Boston Pops Orchestra, Indiana Jones Theme Song](https://www.youtube.com/watch?v=-bTpp8PQSog&ab_channel=Vyrium)
