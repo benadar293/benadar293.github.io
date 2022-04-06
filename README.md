@@ -72,5 +72,7 @@ To reproduce the results from the paper, the EM process, as described in the [pa
 Links to performances used for demonstration:
 
 [Desireless, Voyage](https://www.youtube.com/watch?v=NlgmH5q9uNk&ab_channel=Desireless)
+
 [Maddona, La Isla Bonita](https://www.youtube.com/watch?v=zpzdgmqIHOQ&ab_channel=Madonna)
+
 [Toto, Africa](https://www.youtube.com/watch?v=FTQbiNvZqaY&ab_channel=TotoVEVO)
