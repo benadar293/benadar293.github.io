@@ -38,7 +38,7 @@ We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch 
 
 To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org), including synthetic data pre-training and pitch shift augmentation, is required.
 
-Links to performances excerpts of which we used for demonstration:
+Links to performances excerpts of which we used for demonstration (under fair use):
 
 [Myung-Whun Chung & Orchestre Philharmonique de Radio France, Bizet Carmen Overture](https://www.youtube.com/watch?v=jL-Csf1pNCI&ab_channel=FranceMusique)
 
