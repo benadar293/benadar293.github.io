@@ -10,5 +10,5 @@ This means you can share and adapt under the following conditions:
 **3) ShareAlike — you must distribute your contributions under the same license as the original.**
 
 License applies to the project and to MusicNetEM, but not to the MusicNet dataset. 
-Usage of any part of the original MusicNet dataset (including recordings, unaligned MIDI, 
+Usage of any part of the MusicNet dataset (including recordings, unaligned MIDI, 
 and original aligned MIDI) is under the terms of the MusicNet dataset license.
