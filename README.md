@@ -36,7 +36,7 @@ We used 88 * 12 = 1056 classes. Training in this manner for 101K steps of batch 
 | **Horn** | 75.0 |
 
 
-To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org), including synthetic data pre-training and pitch shift augmentation, is required.
+To reproduce the results from the paper, the EM process, as described in the [paper](https://link-url-here.org), including synthetic data pre-training, pitch-shift augmentation, and loss masking, is required.
 
 Links to performances excerpts of which we used for demonstration:
 
