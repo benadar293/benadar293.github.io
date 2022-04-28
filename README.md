@@ -4,7 +4,7 @@ Based on the paper ["Unaligned Supervision for Automatic Music Transcription in 
 
 ![alt text](teaser.png "Title")
 
-We provide here example transcriptions done by our system of famous pieces and songs, toegether with quantitative results on various benchmarks. 
+We provide here example transcriptions done by our system of famous pieces and songs, together with quantitative results on various benchmarks. 
 
 We also provide here our [improved labels]("musicnet_em.zip") for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). The labels were generated automatically by our method. We refer to MusicNet recordings with our labels as MusicNetEM. We provide a baseline for training from scratch on MusicNetEM, including cross-dataset evaluation. The labels are in the form of MIDI files aligned with the audio, and include instrument information. Onset timing accuracy of the labels is 32ms, which is sufficient to train a transcriber. Onset timings in the original MusicNet labels are not accurate enough for this.
 
