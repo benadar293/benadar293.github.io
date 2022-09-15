@@ -1,6 +1,6 @@
 Ben Maman and Amit Bermano, ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://benadar293.github.io/)
 
-Based on the paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://arxiv.org/abs/2204.13668).
+Based on our ICML 2022 paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://arxiv.org/abs/2204.13668).
 
 ![alt text](teaser.png "Title")
 
