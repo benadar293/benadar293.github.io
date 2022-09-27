@@ -1,4 +1,4 @@
-@article{DBLP:conf/icml/MamanB22,
+@inproceedings{DBLP:conf/icml/MamanB22,
   author    = {Ben Maman and
                Amit H. Bermano},
   editor    = {Kamalika Chaudhuri and
