@@ -371,27 +371,44 @@ def parse_midi_multi(path, force_instrument=None):
 
 def save_midi_alignments_and_predictions(save_path, data_path, inst_mapping,
                                          aligned_onsets, aligned_frames,
-                                         onset_pred_np, frame_pred_np, prefix=''):
+                                         onset_pred_np, frame_pred_np, prefix='', use_time=True):
     inst_only = len(inst_mapping) * N_KEYS
-    time_now = datetime.now().strftime('%y%m%d-%H%M%S')
+    time_now = datetime.now().strftime('%y%m%d-%H%M%S') if use_time else ''
     if len(prefix) > 0:
-        prefix = '_{}_'.format(prefix)
+        prefix = '_{}'.format(prefix)
+
+    # Save the aligned label. If training on a small dataset or a single performance in order to label it for later adding it
+    # to a large dataset, it is recommended to use this MIDI as a label.
     frames2midi(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_alignment_' + time_now + '.mid',
                 aligned_onsets[:, : inst_only], aligned_frames[:, : inst_only],
                 64. * aligned_onsets[:, : inst_only],
                 inst_mapping=inst_mapping)
-    frames2midi_pitch(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_alignment_pitch_' + time_now + '.mid',
-                      aligned_onsets[:, -N_KEYS:], aligned_frames[:, -N_KEYS:],
-                      64. * aligned_onsets[:, -N_KEYS:])
+
+
+    # # Aligned label, pitch-only, on the piano.
+    # frames2midi_pitch(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_alignment_pitch_' + time_now + '.mid',
+    #                   aligned_onsets[:, -N_KEYS:], aligned_frames[:, -N_KEYS:],
+    #                   64. * aligned_onsets[:, -N_KEYS:])
+
+
     predicted_onsets = onset_pred_np >= 0.5
     predicted_frames = frame_pred_np >= 0.5
-    frames2midi(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_pred_' + time_now + '.mid',
-                predicted_onsets[:, : inst_only], predicted_frames[:, : inst_only],
-                64. * predicted_onsets[:, : inst_only],
-                inst_mapping=inst_mapping)
+
+
+    # # Raw pitch with instrument prediction - will probably have lower recall, depending on the model's strength.
+    # frames2midi(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_pred_' + time_now + '.mid',
+    #             predicted_onsets[:, : inst_only], predicted_frames[:, : inst_only],
+    #             64. * predicted_onsets[:, : inst_only],
+    #             inst_mapping=inst_mapping)
+
+
+    # Pitch prediction played on the piano - will have high recall, since it does not differentiate between instruments.
     frames2midi_pitch(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_pred_pitch_' + time_now + '.mid',
                       predicted_onsets[:, -N_KEYS:], predicted_frames[:, -N_KEYS:],
                       64. * predicted_onsets[:, -N_KEYS:])
+
+
+    # Pitch prediction, with choice of most likely instrument for each detected note.
     if len(inst_mapping) > 1:
         max_pred_onsets = max_inst(onset_pred_np)
         frames2midi(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_pred_max_' + time_now + '.mid',
