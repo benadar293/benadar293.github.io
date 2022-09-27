@@ -21,7 +21,7 @@ In order to train, you need some initial transcriber that was trained to detect 
 [model_48.pt](https://drive.google.com/file/d/15QbAJWKkMu4lI4dbf7VYyyLbjq0dvL58/view?usp=sharing)
 
 ## Generating Datasets
-This code can be used to generate transcription datasets. The training script will produce both alignments and predictions, in the folder "logdir/alignments", e.g., "transcriber-220925-125731/alignment". The best alignments and predictions according to the "Bag of Notes" distance are saved in "logdir/alignments/BEST".
+The code can be used to generate transcription datasets. The training script will produce both alignments and predictions, in the folder "logdir/alignments", e.g., "transcriber-220925-125731/alignment". The best alignments and predictions according to the "Bag of Notes" distance are saved in "logdir/alignments/BEST".
 
 You can perform training on a small dataset, e.g., a collection of string quartets, or even a single performance, thus obtaining labels, which can be used for a larger dataset. We recommend using the alignment as labels and not the predictions, since 
 the alignment is less sensitive to the model's strength.
