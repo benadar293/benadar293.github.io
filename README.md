@@ -6,7 +6,7 @@ We provide here code for training a transcriber with unaligned supervision.
 
 Required data is pairs of real performances and corresponding MIDI performances, which can be unaligned with the audio and from unrelated performers. This kind of data is very easy to obtain.
 
-Training can also be done on a small dataset or even a single performance, to obtain aligned labels, which can later be used to train a transcriber on a large-scale dataset.
+Training can also be done on a small dataset or even a single performance, to obtain aligned labels, which can later be used to train a transcriber on a large-scale dataset. You can use this code to create your own version of MusicNetEM.
 
 ## Instructions
 
