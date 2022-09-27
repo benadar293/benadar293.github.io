@@ -1,1 +1,5 @@
-sample
+place checkpoints here. Checkpoints can be downloaded from:
+Bigger model:
+https://drive.google.com/file/d/1RW7Tvaq8jhhjQ3mm5crrBjiFZ7f4mlo9/view?usp=sharing
+Smaller model:
+https://drive.google.com/file/d/15QbAJWKkMu4lI4dbf7VYyyLbjq0dvL58/view?usp=sharing
