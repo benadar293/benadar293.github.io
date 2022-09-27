@@ -91,6 +91,19 @@ Links to performances excerpts of which we used for demonstration:
 ## Cite
 If you use this work, please cite us:
 
+```json
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": ".",
+        }
+    ],
+    "bibtex_file": "path/to/bibtex.bib"
+}
+```
+
 @inproceedings{DBLP:conf/icml/MamanB22,
   author    = {Ben Maman and
                Amit H. Bermano},
