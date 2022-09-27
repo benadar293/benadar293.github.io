@@ -10,11 +10,14 @@ from glob import glob
 import numpy as np
 
 
-# src_dir = '/disk3/ben/onsets_and_frames/onsets-and-frames-master/Museopen/Bach Brandenburg Concerto 1 A'
-src_dir = '/path/to/performance'
-target_root = 'UnalignedSupervision/NoteEM_audio'
+# src_dir = '/path/to/performance'
+src_dir = 'MusicNetSamples'
+target_root = 'NoteEM_audio'
+# file_type = '.mp3'
+# file_type = '.flac'
+file_type = '.wav'
 
-audio_src_files = glob(src_dir + '/**/*.mp3', recursive=True)
+audio_src_files = glob(src_dir + '/**/*' + file_type, recursive=True)
 audio_src_files = sorted(audio_src_files)
 
 print('Beginning pitch shift from', src_dir)
@@ -31,10 +34,10 @@ for f in audio_src_files:
     for shift in range(-5, 6):
         print(shift)
         os.makedirs(target_root + '/' + piece + '#' + str(shift), exist_ok=True)
-        suffix = part[-4:]
-        assert suffix == '.mp3'
-        f_target1 = target_root + '/' + piece + '#' + str(shift) + '/' + part.replace('.mp3', '#{}.flac'.format(shift))
-        f_target2 = target_root + '/' + piece + '#' + str(shift) + '/' + part[: -4] + '#{}.flac'.format(shift)
+        suffix = part[-len(file_type):]
+        assert suffix == file_type
+        f_target1 = target_root + '/' + piece + '#' + str(shift) + '/' + part.replace(file_type, '#{}.flac'.format(shift))
+        f_target2 = target_root + '/' + piece + '#' + str(shift) + '/' + part[: -len(file_type)] + '#{}.flac'.format(shift)
         assert f_target1 == f_target2
         f_target = f_target1
         command = 'sox \"' + f + '\" -r 16000 \"' + f_target + '\" pitch {}'.format(100 * shift)
