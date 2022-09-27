@@ -23,7 +23,7 @@ In order to train, you need some initial transcriber that was trained to detect 
 ## Generating Datasets
 The code can be used to generate transcription datasets. The training script will produce both alignments and predictions, in the folder "logdir/alignments", e.g., "transcriber-220925-125731/alignment". The best alignments and predictions according to the "Bag of Notes" distance are saved in "logdir/alignments/BEST".
 
-You can perform training on a small dataset, e.g., a collection of string quartets, or even a single performance, thus obtaining labels for the performance/s. The labelled performance/s can be added into a larger dataset. For labels, we recommend using the alignment and not the predictions, since 
+You can perform training on a small dataset, e.g., a collection of string quartets, or even a single performance, thus obtaining labels for the performance/s. The labelled performance/s can later be added into a larger dataset. For labels, we recommend using the alignment and not the predictions, since 
 the alignment is less sensitive to the model's strength.
 
 ## MusicNetEM
