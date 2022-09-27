@@ -92,7 +92,16 @@ Links to performances excerpts of which we used for demonstration:
 If you use this work, please cite us:
 
 ```json
-ttt
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": ".",
+        }
+    ],
+    "bibtex_file": "path/to/bibtex.bib"
+}
 ```
 
 
