@@ -7,7 +7,9 @@ We provide here [code](unaligned-supervision-master) for training a transcriber 
 
 ## Instructions
 Make sure you have all the requirements. Use the script make_pitch_shifted_copies.py to create pitch shifted copies of the performances (they will be resampled to 16kHz). Use the script make_parsed_tsv_from_midi.py to create representations of the corresponding MIDI files as note lists in tsv format.
-Then you can train with train.py.
+Then you can train with train.py. 
+
+Currently these scripts will make copies and tsv files for the provided MusicNet samples.
 
 ## Data formatting
 The code assumes that each training group (corresponding to a single performance) is in a separate folder, and the corresponding MIDI folder has the exact amount of files, with the same lexicographic order. The script make_pitch_shifted_copies.py creates 11 copies of the audio data in "NoteEM_audio" inside the project root. The script make_parsed_tsv_from_midi.py creates tsv files in "NoteEM_tsv" inside the project root. The tsv files do not include multiple copies for the pitch shifted copies becuase the training script shifts the labels when required.
