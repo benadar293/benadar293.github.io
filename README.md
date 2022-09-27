@@ -91,8 +91,32 @@ Links to performances excerpts of which we used for demonstration:
 ## Cite
 If you use this work, please cite us:
 
+@inproceedings{DBLP:conf/icml/MamanB22,
+  author    = {Ben Maman and
+               Amit H. Bermano},
+  editor    = {Kamalika Chaudhuri and
+               Stefanie Jegelka and
+               Le Song and
+               Csaba Szepesv{\'{a}}ri and
+               Gang Niu and
+               Sivan Sabato},
+  title     = {Unaligned Supervision for Automatic Music Transcription in The Wild},
+  booktitle = {International Conference on Machine Learning, {ICML} 2022, 17-23 July
+               2022, Baltimore, Maryland, {USA}},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {162},
+  pages     = {14918--14934},
+  publisher = {{PMLR}},
+  year      = {2022},
+  url       = {https://proceedings.mlr.press/v162/maman22a.html},
+  timestamp = {Tue, 12 Jul 2022 17:36:52 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/MamanB22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
 ```json
-{
+@inproceedings{
     "folders":
     [
         {
