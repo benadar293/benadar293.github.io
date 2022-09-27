@@ -16,7 +16,7 @@
   publisher = {{PMLR}},
   year      = {2022},
   url       = {https://proceedings.mlr.press/v162/maman22a.html},
-  timestamp = {Tue, 12 Jul 2022 17:36:52 +0200},
-  biburl    = {https://dblp.org/rec/conf/icml/MamanB22.bib},
+#   timestamp = {Tue, 12 Jul 2022 17:36:52 +0200},
+#   biburl    = {https://dblp.org/rec/conf/icml/MamanB22.bib},
 #   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
