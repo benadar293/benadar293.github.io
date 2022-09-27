@@ -90,7 +90,7 @@ Links to performances excerpts of which we used for demonstration:
 
 ## Cite
 If you use this work, please cite us:
-
+```
 @inproceedings{DBLP:conf/icml/MamanB22,
   author    = {Ben Maman and
                Amit H. Bermano},
@@ -113,3 +113,4 @@ If you use this work, please cite us:
   biburl    = {https://dblp.org/rec/conf/icml/MamanB22.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+```
