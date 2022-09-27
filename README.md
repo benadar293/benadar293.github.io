@@ -1,5 +1,5 @@
 # Unaligned Supervision for Automatic Music Transcription in The Wild
-Based on our ICML 2022 paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://arxiv.org/abs/2204.13668).
+Based on our ICML 2022 paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://proceedings.mlr.press/v162/maman22a.html).
 
 ![alt text](teaser.png "Title")
 
