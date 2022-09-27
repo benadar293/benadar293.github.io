@@ -1,8 +1,14 @@
-Ben Maman and Amit Bermano, ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://benadar293.github.io/)
-
 Based on our ICML 2022 paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://arxiv.org/abs/2204.13668).
 
 ![alt text](teaser.png "Title")
+
+We provide here code for training a transcriber with unaligned supervision. 
+
+Required data is pairs of real performances and corresponding MIDI performances, which can be unaligned with the audio and from unrelated performers. This kind of data is very easy to obtain.
+
+Training can also be done on a small dataset or even a single performance, to obtain aligned labels, which can later be used to train a transcriber on a large-scale dataset.
+
+## Instructions
 
 We provide here example transcriptions done by our system of famous pieces and songs, together with quantitative results on various benchmarks. 
 
