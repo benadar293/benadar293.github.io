@@ -12,6 +12,11 @@ Then you can train with train.py.
 ## Data formatting
 The code assumes that each training group (corresponding to a single performance) is in a separate folder, and the corresponding MIDI folder has the exact amount of files, with the same lexicographic order. The script make_pitch_shifted_copies.py creates 11 copies of the audio data in "NoteEM_audio" inside the project root. The script make_parsed_tsv_from_midi.py creates tsv files in "NoteEM_tsv" inside the project root. The tsv files do not include multiple copies for the pitch shifted copies becuase the training script shifts the labels when required.
 
+## Pre-Trained Checkpoints
+In order to train, you need some initial transcriber, e.g., one that was trained on synthetic data. You can find two checkpoints here:
+[model_64.pt](https://drive.google.com/file/d/1RW7Tvaq8jhhjQ3mm5crrBjiFZ7f4mlo9/view?usp=sharing)
+[model_48.pt](https://drive.google.com/file/d/15QbAJWKkMu4lI4dbf7VYyyLbjq0dvL58/view?usp=sharing)
+
 
 ## MusicNetEM
 In addition, we provide here our [improved labels](musicnet_em.zip) for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). The labels were generated automatically by our method. We refer to MusicNet recordings with our labels as MusicNetEM. We provide a baseline for training from scratch on MusicNetEM, including cross-dataset evaluation. The labels are in the form of MIDI files aligned with the audio, and include instrument information. Onset timing accuracy of the labels is 32ms, which is sufficient to train a transcriber. Onset timings in the original MusicNet labels are not accurate enough for this.
