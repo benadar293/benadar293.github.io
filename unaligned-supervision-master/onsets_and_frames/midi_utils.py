@@ -411,7 +411,7 @@ def save_midi_alignments_and_predictions(save_path, data_path, inst_mapping,
     # Pitch prediction, with choice of most likely instrument for each detected note.
     if len(inst_mapping) > 1:
         max_pred_onsets = max_inst(onset_pred_np)
-        frames2midi(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_pred_max_' + time_now + '.mid',
+        frames2midi(save_path + '/' + data_path.replace('.flac', '').split('/')[-1] + prefix + '_pred_inst_' + time_now + '.mid',
                     max_pred_onsets[:, : inst_only], predicted_frames[:, : inst_only],
                     64. * max_pred_onsets[:, : inst_only],
                     inst_mapping=inst_mapping)
