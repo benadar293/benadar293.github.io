@@ -10,7 +10,7 @@ Make sure you have all the requirements. Use the script make_pitch_shifted_copie
 Then you can train with train.py.
 
 ## Data formatting
-The code assumes that each training group (corresponding to a single performance) is in a separate folder, and the corresponding MIDI folder has the exact amount of files, with the same lexicographic order. The script make_pitch_shifted_copies.py creates 11 copies of the audio data in "NoteEM_audio" inside the project root. The script make_parsed_tsv_from_midi.py creates tsv files in "NoteEM_tsv" inside the project root. The tsv files do not include multiple copies for the pitch shifted copies becuase the training script just shifts the labels when required.
+The code assumes that each training group (corresponding to a single performance) is in a separate folder, and the corresponding MIDI folder has the exact amount of files, with the same lexicographic order. The script make_pitch_shifted_copies.py creates 11 copies of the audio data in "NoteEM_audio" inside the project root. The script make_parsed_tsv_from_midi.py creates tsv files in "NoteEM_tsv" inside the project root. The tsv files do not include multiple copies for the pitch shifted copies becuase the training script shifts the labels when required.
 
 
 ## MusicNetEM
