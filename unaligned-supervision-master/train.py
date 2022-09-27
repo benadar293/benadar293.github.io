@@ -41,7 +41,7 @@ def config():
     learning_rate = 0.0001
     learning_rate_decay_steps = 10000
     clip_gradient_norm = False #3
-    epochs = 1000
+    epochs = 15
 
     ex.observers.append(FileStorageObserver.create(logdir))
 
