@@ -20,7 +20,9 @@ def midi2tsv_process(midi_path, target_path, shift=0, force_instrument=None):
                fmt='%1.6f', delimiter='\t', header='onset,offset,note,velocity,instrument')
 
 
-midi_src_pth = '/path/to/midi/perfromance'
+# midi_src_pth = '/path/to/midi/perfromance'
+midi_src_pth = 'MusicNetSamples'
+
 target = '/disk4/ben/UnalignedSupervision/NoteEM_tsv'
 
 
