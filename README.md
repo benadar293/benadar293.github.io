@@ -20,6 +20,11 @@ In order to train, you need some initial transcriber that was trained to detect 
 
 [model_48.pt](https://drive.google.com/file/d/15QbAJWKkMu4lI4dbf7VYyyLbjq0dvL58/view?usp=sharing)
 
+## Generating Datasets
+The training script will produce both alignments and predictions, in the folder "logdir/alignments", e.g., "transcriber-220925-125731/alignment". The best alignments and predictions according to the "Bag of Notes" distance are saved in "logdir/alignments/BEST".
+
+You can perform training on a small dataset, e.g., a collection of string quartets, or even a single performance, thus obtaining labels, which can be used for a larger dataset. We recommend using the alignment as labels and not the predictions, since 
+the alignment is less sensitive to the model's strength.
 
 ## MusicNetEM
 In addition, we provide here our [improved labels](musicnet_em.zip) for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). The labels were generated automatically by our method. We refer to MusicNet recordings with our labels as MusicNetEM. We provide a baseline for training from scratch on MusicNetEM, including cross-dataset evaluation. The labels are in the form of MIDI files aligned with the audio, and include instrument information. Onset timing accuracy of the labels is 32ms, which is sufficient to train a transcriber. Onset timings in the original MusicNet labels are not accurate enough for this.
