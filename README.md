@@ -93,17 +93,6 @@ If you use this work, please cite us:
 
 ```json
 {
-    "folders":
-    [
-        {
-            "follow_symlinks": true,
-            "path": ".",
-        }
-    ],
-    "bibtex_file": "path/to/bibtex.bib"
-}
-```
-
 @inproceedings{DBLP:conf/icml/MamanB22,
   author    = {Ben Maman and
                Amit H. Bermano},
@@ -126,6 +115,8 @@ If you use this work, please cite us:
   biburl    = {https://dblp.org/rec/conf/icml/MamanB22.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+}
+```
 
 
 
