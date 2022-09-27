@@ -3,7 +3,7 @@ Based on our ICML 2022 paper ["Unaligned Supervision for Automatic Music Transcr
 
 ![alt text](teaser.png "Title")
 
-We provide here code for training a transcriber with unaligned supervision. Required data is pairs of real performances and corresponding MIDI performances, which can be unaligned with the audio and from unrelated performers. This kind of data is very easy to obtain. Training can also be done on a small dataset or even a single performance, to obtain aligned labels, which can later be used to train a transcriber on a large-scale dataset. In particular, you can use this code to create your own version of [MusicNetEM](musicnet_em.zip), which are our improved labels for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)).
+We provide here code for training a transcriber with unaligned supervision. Required data is pairs of real performances and corresponding MIDI performances, which can be unaligned with the audio and from unrelated performers. This kind of data is very easy to obtain. Training can also be done on a small dataset or even a single performance, to obtain aligned labels, which can later be used to train a transcriber on a large-scale dataset. In particular, you can use this code to create your own version of [MusicNetEM](musicnet_em.zip), which are our improved labels for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). We also provide here example transcriptions done by our system of famous pieces and songs, together with quantitative results on various benchmarks. 
 
 ## Instructions
 Make sure you have all the requirements. Use the script make_pitch_shifted_copies.py to create pitch shifted copies of the performances. Use the script make_parsed_tsv_from_midi.py to create representations of the corresponding MIDI files as note lists in tsv format.
@@ -12,8 +12,8 @@ Then you can train with train.py.
 ## Data formatting
 The code assumes that each training group (corresponding to a single performance) is in a separate folder, and the corresponding MIDI folder has the exact amount of files, with the same lexicographic order.
 
-We also provide here example transcriptions done by our system of famous pieces and songs, together with quantitative results on various benchmarks. 
 
+## MusicNetEM
 In addition, we provide here our [improved labels](musicnet_em.zip) for the [MusicNet dataset](https://arxiv.org/abs/1611.09827) (the original dataset can be found [here](https://www.kaggle.com/imsparsh/musicnet-dataset)). The labels were generated automatically by our method. We refer to MusicNet recordings with our labels as MusicNetEM. We provide a baseline for training from scratch on MusicNetEM, including cross-dataset evaluation. The labels are in the form of MIDI files aligned with the audio, and include instrument information. Onset timing accuracy of the labels is 32ms, which is sufficient to train a transcriber. Onset timings in the original MusicNet labels are not accurate enough for this.
 
 The labels were generated automatically by an EM process similar to the one described in our paper ["Unaligned Supervision for Automatic Music Transcription in The Wild"](https://link-url-here.org). We improved the alignment algorithm, and in order to get more accurate labels, we divided the datast into three groups, based on the ensembles: piano solo, strings, and wind. We performed the EM process on each group separately.
