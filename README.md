@@ -9,7 +9,8 @@ We provide here code for training a transcriber with unaligned supervision. Requ
 Make sure you have all the requirements. Use the script make_pitch_shifted_copies.py to create pitch shifted copies of the performances. Use the script make_parsed_tsv_from_midi.py to create representations of the corresponding MIDI files as note lists in tsv format.
 Then you can train with train.py.
 
-## Data formatting (important):
+## Data formatting
+The code assumes that each training group (corresponding to a single performance) is in a separate folder, and the corresponding MIDI folder has the exact amount of files, with the same lexicographic order.
 
 We also provide here example transcriptions done by our system of famous pieces and songs, together with quantitative results on various benchmarks. 
 
