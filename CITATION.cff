@@ -1,16 +1,22 @@
-
-@InProceedings{pmlr-v162-maman22a,
-  title = 	 {Unaligned Supervision for Automatic Music Transcription in The Wild},
-  author =       {Maman, Ben and Bermano, Amit H},
-  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
-  pages = 	 {14918--14934},
-  year = 	 {2022},
-  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
-  volume = 	 {162},
-  series = 	 {Proceedings of Machine Learning Research},
-  month = 	 {17--23 Jul},
-  publisher =    {PMLR},
-  pdf = 	 {https://proceedings.mlr.press/v162/maman22a/maman22a.pdf},
-  url = 	 {https://proceedings.mlr.press/v162/maman22a.html},
-  abstract = 	 {Multi-instrument Automatic Music Transcription (AMT), or the decoding of a musical recording into semantic musical content, is one of the holy grails of Music Information Retrieval. Current AMT approaches are restricted to piano and (some) guitar recordings, due to difficult data collection. In order to overcome data collection barriers, previous AMT approaches attempt to employ musical scores in the form of a digitized version of the same song or piece. The scores are typically aligned using audio features and strenuous human intervention to generate training labels. We introduce Note$_{EM}$, a method for simultaneously training a transcriber and aligning the scores to their corresponding performances, in a fully-automated process. Using this unaligned supervision scheme, complemented by pseudo-labels and pitch shift augmentation, our method enables training on in-the-wild recordings with unprecedented accuracy and instrumental variety. Using only synthetic data and unaligned supervision, we report SOTA note-level accuracy of the MAPS dataset, and large favorable margins on cross-dataset evaluations. We also demonstrate robustness and ease of use; we report comparable results when training on a small, easily obtainable, self-collected dataset, and we propose alternative labeling to the MusicNet dataset, which we show to be more accurate. Our project page is available at https://benadar293.github.io.}
+@inproceedings{DBLP:conf/icml/MamanB22,
+  author    = {Ben Maman and
+               Amit H. Bermano},
+  editor    = {Kamalika Chaudhuri and
+               Stefanie Jegelka and
+               Le Song and
+               Csaba Szepesv{\'{a}}ri and
+               Gang Niu and
+               Sivan Sabato},
+  title     = {Unaligned Supervision for Automatic Music Transcription in The Wild},
+  booktitle = {International Conference on Machine Learning, {ICML} 2022, 17-23 July
+               2022, Baltimore, Maryland, {USA}},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {162},
+  pages     = {14918--14934},
+  publisher = {{PMLR}},
+  year      = {2022},
+  url       = {https://proceedings.mlr.press/v162/maman22a.html},
+  timestamp = {Tue, 12 Jul 2022 17:36:52 +0200},
+  biburl    = {https://dblp.org/rec/conf/icml/MamanB22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
