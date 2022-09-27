@@ -14,8 +14,8 @@ import numpy as np
 src_dir = 'MusicNetSamples'
 target_root = 'NoteEM_audio'
 # file_type = '.mp3'
-# file_type = '.flac'
-file_type = '.wav'
+file_type = '.flac'
+# file_type = '.wav'
 
 audio_src_files = glob(src_dir + '/**/*' + file_type, recursive=True)
 audio_src_files = sorted(audio_src_files)
