@@ -20,7 +20,7 @@ In order to train, you need some initial transcriber that was trained to detect 
 
 [model_48.pt](https://drive.google.com/file/d/15QbAJWKkMu4lI4dbf7VYyyLbjq0dvL58/view?usp=sharing) - (trained with HOP_LENGTH 256)
 
-Alignment will still be accurate when switching between hop lengths.
+Switching between hop lengths is possible without much effect on the alignment.
 
 ## Generating Datasets
 The code can be used to generate transcription datasets. The training script will produce both alignments and predictions, in the folder "logdir/alignments", e.g., "transcriber-220925-125731/alignment". The best alignments and predictions according to the "Bag of Notes" distance are saved in "logdir/alignments/BEST".
