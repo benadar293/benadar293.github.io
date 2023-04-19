@@ -16,9 +16,11 @@ The code assumes that each training group (corresponding to a single performance
 ## Pre-Trained Checkpoints
 In order to train, you need some initial transcriber that was trained to detect pitch, e.g., one that was trained on synthetic data. You can find two such checkpoints here:
 
-[model_64.pt](https://drive.google.com/file/d/1RW7Tvaq8jhhjQ3mm5crrBjiFZ7f4mlo9/view?usp=sharing)
+[model_64.pt](https://drive.google.com/file/d/1RW7Tvaq8jhhjQ3mm5crrBjiFZ7f4mlo9/view?usp=sharing) - was trained with HOP_LENGTH = 512
 
-[model_48.pt](https://drive.google.com/file/d/15QbAJWKkMu4lI4dbf7VYyyLbjq0dvL58/view?usp=sharing)
+[model_48.pt](https://drive.google.com/file/d/15QbAJWKkMu4lI4dbf7VYyyLbjq0dvL58/view?usp=sharing) - was trained with HOP_LENGTH = 256
+
+Alignment will still be accurate when switching between hop lengths.
 
 ## Generating Datasets
 The code can be used to generate transcription datasets. The training script will produce both alignments and predictions, in the folder "logdir/alignments", e.g., "transcriber-220925-125731/alignment". The best alignments and predictions according to the "Bag of Notes" distance are saved in "logdir/alignments/BEST".
