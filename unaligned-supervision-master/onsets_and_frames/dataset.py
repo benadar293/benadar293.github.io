@@ -1,3 +1,7 @@
+# This software is for non-commercial use only.
+# Commercial use requires a separate license.
+# This software is covered by US Patent Application No. 63/312,219.
+
 from .constants import *
 import numpy as np
 from dtw import *
