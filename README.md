@@ -98,6 +98,9 @@ Links to performances excerpts of which we used for demonstration:
 ## License
 This software is provided for non-commercial use only. For commercial use, you must obtain a commercial license by contacting the [author](mailto:benadartombom@gmail.com).
 
+## Patent Information
+This software is protected by US Patent Application No. 63/312,219. Unauthorized commercial use of this software may result in patent infringement claims.
+
 ## Cite
 If you use this work, please cite us:
 ```
