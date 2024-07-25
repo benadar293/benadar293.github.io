@@ -95,6 +95,9 @@ Links to performances excerpts of which we used for demonstration:
 
 [Dick Dale and the Del Tones, Misirlou (Pulp Fiction Soundtrack)](https://www.youtube.com/watch?v=1hLIXrlpRe8)
 
+## License
+This software is provided for non-commercial use only. For commercial use, you must obtain a commercial license by contacting [author](mailto:benadartombom@gmail.com).
+
 ## Cite
 If you use this work, please cite us:
 ```
