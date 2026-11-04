@@ -16,9 +16,8 @@ The code assumes that each training group (corresponding to a single performance
 ## Pre-Trained Checkpoints
 In order to train, you need some initial transcriber that was trained to detect pitch, e.g., one that was trained on synthetic data. You can find two such checkpoints here:
 
-[model_64.pt](https://drive.google.com/file/d/1RW7Tvaq8jhhjQ3mm5crrBjiFZ7f4mlo9/view?usp=sharing) - (trained with HOP_LENGTH 512)
-
-[model_48.pt](https://drive.google.com/file/d/15QbAJWKkMu4lI4dbf7VYyyLbjq0dvL58/view?usp=sharing) - (trained with HOP_LENGTH 256)
+[MusicNet trained](https://drive.google.com/file/d/1UKudmY8Xwfr6nq65pomos8K6hm8iorec/view?usp=sharing)
+[Synth trained](https://drive.google.com/file/d/18mh1AipVv_xwXrDYnRB51TLv51MTSvYG/view?usp=sharing)
 
 Switching between hop lengths is possible without much effect on the alignment.
 
