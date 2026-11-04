@@ -14,13 +14,11 @@ After running [make_pitch_shifted_copies.py](unaligned-supervision-master/make_p
 The code assumes that each training group (corresponding to a single performance) is in a separate folder, and the corresponding MIDI folder has the exact amount of files, with the same lexicographic order. The script make_pitch_shifted_copies.py creates 11 copies of the audio data in "NoteEM_audio" inside the project root. The script make_parsed_tsv_from_midi.py creates tsv files in "NoteEM_tsv" inside the project root. The tsv files do not include multiple copies for the pitch shifted copies becuase the training script shifts the labels when required.
 
 ## Pre-Trained Checkpoints
-In order to train, you need some initial transcriber that was trained to detect pitch, e.g., one that was trained on synthetic data. You can find two such checkpoints here:
+In order to train, you need some initial transcriber that was trained to detect pitch. You can find two such checkpoints here:
 
 [MusicNet trained](https://drive.google.com/file/d/1UKudmY8Xwfr6nq65pomos8K6hm8iorec/view?usp=sharing)
 
 [Synth trained](https://drive.google.com/file/d/18mh1AipVv_xwXrDYnRB51TLv51MTSvYG/view?usp=sharing)
-
-Switching between hop lengths is possible without much effect on the alignment.
 
 ## Generating Datasets
 The code can be used to generate transcription datasets. The training script will produce both alignments and predictions, in the folder "logdir/alignments", e.g., "transcriber-220925-125731/alignment". The best alignments and predictions according to the "Bag of Notes" distance are saved in "logdir/alignments/BEST".
