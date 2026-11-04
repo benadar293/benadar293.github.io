@@ -17,6 +17,7 @@ The code assumes that each training group (corresponding to a single performance
 In order to train, you need some initial transcriber that was trained to detect pitch, e.g., one that was trained on synthetic data. You can find two such checkpoints here:
 
 [MusicNet trained](https://drive.google.com/file/d/1UKudmY8Xwfr6nq65pomos8K6hm8iorec/view?usp=sharing)
+
 [Synth trained](https://drive.google.com/file/d/18mh1AipVv_xwXrDYnRB51TLv51MTSvYG/view?usp=sharing)
 
 Switching between hop lengths is possible without much effect on the alignment.
